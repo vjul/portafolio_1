@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Valentín Jul</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body>
+    <section>
+        <div class="container mt-5 text-primary-emphasis">
+            <h1>Portafolio de Valentín Jul</h1>
+        </div>
+    </section>
+    <section class="container">
+        <div class="container row mt-5 ">
+            <div class="container border rounded col-md-8 ">
+                <h4>Información personal</h4>
+                <div class="row mt-5">
+                    <h6 class="col-md-4">Nombre completo:</h6>
+                    <span class="col-md-8">Valentín Alonso Jul Álvarez</span>
+                </div>
+                <div class="row">
+                    <h6 class="col-md-4">Edad:</h6>
+                    <span class="col-md-8">53 años</span>
+                </div>
+                <div class="bg-secondary-subtle">
+                    <h5 class="mt-5">Reseña</h5>
+                    <p class="justify ">Ingeniero graduado de la Universidad de Chile en 1999. Su ejercicio profesional
+                        ha
+                        estado centrado en
+                        el
+                        área de Desarrollo de Software.
+                        Experiencia en desarrollo de aplicaciones Java desde el año 2003. Posee sólidos conocimientos en
+                        programación orientada a objetos, y ha adquirido experiencia en diversas plataformas de
+                        desarrollo
+                        del
+                        mundo Java: Java Swing, Java applets, Spring, frameworks ORM como Hibernate y MyBatis, Web
+                        Services
+                        SOAP
+                        y Apis REST, entre otras tecnologías.
+                        En búsqueda de perfeccionamiento, ha cursado el Postítulo en Ingeniería y Calidad de Software en
+                        el
+                        DCC,
+                        Facultad de Ciencias Físicas y Matemáticas de la Universidad de Chile, el año 2006.
+                    </p>
+                </div>
+            </div>
+            <div class="container border rounded col-md-4 ">
+                <h4>Habilidades</h4>
+                <ul class="list-group list-group-flush mt-5">
+                    <li class="list-group-item bg-success-subtle">Capacidad analítica</li>
+                    <li class="list-group-item bg-success-subtle">Pensamiento crítico</li>
+                    <li class="list-group-item bg-success-subtle">Autoexigente</li>
+                    <li class="list-group-item bg-success-subtle">Ética profesional</li>
+                    <li class="list-group-item bg-success-subtle">Autodidacta</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <hr>
+        <div class="container">
+            <h4>Mis Proyectos</h4>
+        </div>
+        <div class="container mt-5">
+            <button id="btnAgregarProyecto" type="button" class="btn btn-success">Agregar proyecto</button>
+            <div id="proyectos">
+                <!--    <form action="">-->
+                <div id="ingresoDatos" class="hide">
+                    <div class="row">
+                        <div class="mt-3 col-md-6">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre">
+                        </div>
+                        <div class="mt-3 col-md-6">
+                            <label for="descripcion" class="form-label">Descripción</label>
+                            <input type="text" class="form-control" id="descripcion">
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <button id="btnAgregar" type="button" class="btn btn-primary">Agregar</button>
+                    </div>
+                </div>
+                <!--    </form>-->
+            </div>
+            <div class="container mt-5">
+                <table class="table">
+                    <thead>
+                      <tr>        
+                        <th scope="col">Proyecto</th>
+                        <th scope="col">Descripción</th>
+                        <th scope="col">Eliminar</th>
+                      </tr>
+                    </thead>
+                    <tbody id="cuerpo-tabla">
+                      <tr>           
+                        <td></td>
+                        <td></td>           
+                        <td></td>
+                      </tr>         
+                    </tbody>
+                  </table>
+                </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
