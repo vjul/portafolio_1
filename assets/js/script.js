@@ -1,5 +1,9 @@
 $(function () {
-  let proyectos = [];
+  let proyectos = [
+    { nombre: "Estudiar", descripcion: "Estudiar javascript" },
+    { nombre: "Guitarra", descripcion: "Aprender a tocar guitarra" },
+    { nombre: "Ahorrar", descripcion: "Ahorrar para compra de departamento" },
+  ];
 
   function cargarProyectos() {
     let html = "";
