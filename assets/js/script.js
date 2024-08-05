@@ -47,4 +47,13 @@ $(function () {
     $("#ingresoDatos").hide();
     cargarProyectos();
   });
+
+  $("#formulario").on("submit", function () {
+    event.preventDefault();
+    $("#exito").show();
+  });
+
+  $("#reset").on("click", function () {
+    $("#exito").hide();
+  });
 });
