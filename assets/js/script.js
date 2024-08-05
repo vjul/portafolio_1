@@ -1,9 +1,5 @@
 $(function () {
-  let proyectos = [
-    { nombre: "Pintar", descripcion: "Pintar la casa" },
-    { nombre: "Comprar", descripcion: "Comprar comida para el perro" },
-    { nombre: "Pagar", descripcion: "Pagar la tarjeta de crédito" },
-  ];
+  let proyectos = [];
 
   function cargarProyectos() {
     let html = "";
