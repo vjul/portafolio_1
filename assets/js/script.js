@@ -15,11 +15,17 @@ $(function () {
           </tr>`;
     });
     $("#cuerpo-tabla").html(html);
+
     $(".btn-danger").on("click", function () {
-      let index = $(this).data("index");
-      eliminar(index);
+      $("#modalEliminar").modal("show");
+      $("#btnEliminar").data("index", $(this).data("index"));
     });
   }
+
+  $("#btnEliminar").on("click", function () {
+    let index = $(this).data("index");
+    eliminar(index);
+  });
 
   cargarProyectos();
 

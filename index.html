@@ -106,7 +106,30 @@
                 </table>
             </div>
         </div>
+
+        <!-- Modal eliminar -->
+        <div class="modal fade" id="modalEliminar" tabindex="-1" data-bs-backdrop="static">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Confirmación requerida</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Confirma que desea eliminar el proyecto?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal"
+                            id="btnEliminar">Eliminar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </section>
+
+    <!-- Formulario de contacto -->
     <section class="container">
         <hr>
         <h4>Contáctame</h4>
@@ -142,7 +165,7 @@
                     <button type="submit" class="btn btn-primary" id="enviar">Enviar</button>
                     <h5 class="ms-5 hide text-success" id="exito">Solicitud enviada con éxito!</h5>
                     <button type="reset" class="btn btn-secondary" id="reset">Limpiar</button>
-                    
+
                 </div>
             </form>
         </div>
